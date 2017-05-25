@@ -74,6 +74,9 @@ h1 {
   font-size: 23px;
   vertical-align: top;
 }
+.nav-mobile__search-toggle {
+	vertical-align: text-bottom;
+}
 
 
 .search-icon {
@@ -210,8 +213,30 @@ nav ul {
 .dropdown__list--purple .dropdown__item a {
   color: #aa4cbd;
 }
+/* Dropdown - END */
 
-/* Drowpdown - END */
+/* mobile select */
+#nav-mobile__toggle {
+	width: 60px;
+	overflow: hidden;
+	background: transparent url("../images/global-nav-02-menu.png") no-repeat left top;
+	background-size: 23px 20px;
+}
+
+#nav-mobile__toggle select {
+	font-size: 10px;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+}
+
+#nav-mobile__toggle select:focus {
+	outline: none;
+}
+/* mobile select - end */
 
 
 
