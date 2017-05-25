@@ -21,7 +21,7 @@ $(document).ready( function() {
   // far left, which is not a problem IMHO with those big things. :-)
 
   $('.nav__primary--item').each(function(i, el) {
-    $(el).find('.dropdown-menu').css( 'left', (el.offsetLeft-7) + 'px');
+    $(el).find('.dropdown-menu').css( 'left', (el.offsetLeft-20) + 'px');
   });
 
 });
