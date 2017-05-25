@@ -5,6 +5,12 @@ $(document).ready( function() {
   //  $(this).toggleClass('active');
   //});
 
+	// mobile menu
+	$("#nav-mobile__toggle select").change(function() {
+		if ($(this).find("option:selected").val()) {
+			window.location = $(this).find("option:selected").val();
+		}
+	});
 
   // determine X position of primary nav.
   // needed because dropdown menus tend 
