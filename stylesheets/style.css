@@ -129,13 +129,17 @@ nav ul {
   padding: 0;
   list-style: none;
 }
+.nav__primary {
+  position: relative; 
+}
 .nav__primary--item {
+  //position: relative;
   display: inline-block;
   line-height: 25px;
   font-size: 14px;
   font-weight: 400;
   text-transform: none;
-  padding-right: 5px;
+  padding-right: 7px;
 }
 .nav__primary--item:after {
   content: '';
@@ -143,7 +147,7 @@ nav ul {
   width: 1px;
   height: 13px;
   background: #146093;
-  margin-left: 4px;
+  margin-left: 6px;
   margin-bottom: -1px;
 }
 .nav__primary--item:first-child {
@@ -152,10 +156,53 @@ nav ul {
 .nav__primary--item:last-child:after {
   display: none;
 }
+.nav__primary--item.open a {
+  color: #003c62;
+}
 .main-nav__item a {
 
 }
 
+/* Drowpdown */
+.dropdown-menu {
+  border-radius: 0;
+  top: 27px;
+  left: -20px;
+  padding: 14px 29px 30px 19px;
+}
+.dropdown__list-group {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 28px;
+}
+.dropdown__header {
+  color: #727272;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 9px;
+}
+.dropdown__item {
+  margin-bottom: 3px;
+
+}
+.dropdown__item a {
+  font-size: 14px;
+  color: black;
+}
+.dropdown__list--blue .dropdown__item a {
+  color: #1a95d3;
+}
+.dropdown__list--green .dropdown__item a {
+  color: #18a577;
+}
+.dropdown__list--purple .dropdown__item a {
+  color: #aa4cbd;
+}
+
+/* Drowpdown - END */
 
 
 
@@ -582,8 +629,12 @@ main {
 /* FOOTER */
 footer {
   background: #fff;
+
+  padding: 0 20px;
+}
+.footer__content {
   border-top: 1px solid #ccc;
-  padding: 20px;
+  padding: 20px 0;
 }
 footer p {
   font-size: 12px;
@@ -605,10 +656,15 @@ footer p {
   max-width: 240px;
   margin-top: 20px;
 }
+
+
 @media screen and (min-width: 550px) {
-  margin-top: 0;
-  float: right;
+  .footer__nyc {
+    margin-top: 0;
+    float: right;
+  }
 }
+
 .nyc__logo--edu {
   vertical-align: top;
   max-width: 109px;
@@ -620,3 +676,7 @@ footer p {
 }
 
 /* footer - END */
+
+
+
+
