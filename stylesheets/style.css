@@ -169,6 +169,7 @@ nav ul {
   top: 27px;
   left: -20px;
   padding: 14px 29px 30px 19px;
+  max-height: 252px;
 }
 .dropdown__list-group {
   display: inline-block;
@@ -178,19 +179,20 @@ nav ul {
 .dropdown__header {
   color: #727272;
   font-size: 12px;
+  line-height: 2.333em;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 9px;
 }
 .dropdown__item {
-  margin-bottom: 3px;
+  
 
 }
 .dropdown__item a {
   font-size: 14px;
   color: black;
+  line-height: 2em;
 }
 .dropdown__list--blue .dropdown__item a {
   color: #1a95d3;
