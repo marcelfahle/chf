@@ -48,6 +48,7 @@ h1 {
   padding-left: 28px;
   padding-right: 17px;
   line-height: 20px;
+  vertical-align: baseline;
 }
 .burger-icon,
 .burger-icon:before,
@@ -77,6 +78,11 @@ h1 {
 .nav-mobile__search-toggle {
 	vertical-align: text-bottom;
 }
+.nav__tools {
+  position: relative;
+  z-index: 10;
+}
+
 
 
 .search-icon {
@@ -172,6 +178,9 @@ nav ul {
 }
 
 /* Drowpdown */
+.has-dropdown {
+  position: relative;
+}
 .dropdown-menu {
   border-radius: 0;
   border: none !important;
@@ -216,14 +225,17 @@ nav ul {
 /* Dropdown - END */
 
 /* mobile select */
-#nav-mobile__toggle {
+.nav-mobile__toggle {
+  vertical-align: top;
+  height: 20px;
 	width: 60px;
+  display: inline-block;
 	overflow: hidden;
 	background: transparent url("../images/global-nav-02-menu.png") no-repeat left top;
 	background-size: 23px 20px;
 }
 
-#nav-mobile__toggle select {
+.nav-mobile__toggle select {
 	font-size: 10px;
 	text-transform: uppercase;
 	border: none;
@@ -231,10 +243,18 @@ nav ul {
 	background: transparent;
 	background-image: none;
 	-webkit-appearance: none;
+  padding-left: 26px;
+  padding-top: 3px;
 }
 
-#nav-mobile__toggle select:focus {
+.nav-mobile__toggle select:focus {
 	outline: none;
+}
+.nav-mobile__search-toggle {
+  vertical-align: top;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
 }
 /* mobile select - end */
 
@@ -252,6 +272,7 @@ main {
   color: white;
   overflow: hidden;
   margin-bottom: 20px;
+  vertical-align: top;
 }
 @media screen and (min-width: 768px) {
   .card:not(.card--primary):not(.card--social) {
@@ -503,11 +524,12 @@ main {
 }
 
 /* button modifications */
-#nav-mobile .button__round.pull-right {
+#nav-mobile .button__round {
   line-height: 14px;
   font-weight: 400;
   font-size: 10px;
-  margin-top: 2px;
+  /* margin-top: 2px; */
+  letter-spacing: 0.1em;
 } 
 .card--primary .button__rect--white {
   min-width: 252px;
