@@ -369,7 +369,7 @@ main {
 .card--basic h3 {
   font-size: 22px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.05em;
   padding-bottom: 10px;
   height: auto;
   text-transform: none;
@@ -388,6 +388,42 @@ main {
   margin-top: 2px;
   border-top: 1px solid #98bbce;
 }
+.card .card__content--basic > img {
+  max-width: 30%;
+  margin-top: 7px;
+}
+@media screen and (min-width: 500px) {
+  .card .card__content--basic > img {
+    max-width: 18%;
+    margin-top: 7px;
+  }
+}
+
+
+.card--landing {
+  height: 302px;
+}
+@media screen and (min-width: 500px) {
+  .card--landing {
+    height: 232px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .card--landing {
+    height: 232px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card--landing {
+    height: 262px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card--landing {
+    height: 232px;
+  }
+}
+
 
 
 
@@ -401,6 +437,7 @@ main {
 .card--basic .card__actions {
   position: relative;
   bottom: auto;
+  clear: both;
 }
 
 
@@ -492,12 +529,26 @@ main {
 .button__round {
   display: inline-block;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   border: none;
   padding: 4px 21px;
   border-radius: 12px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+}
+
+.button__round:last-child {
+  margin-right: 0;
+} 
+.button__round:link,
+.button__round:visited {
+  text-decoration: none;
+}
+.button__round:hover,
+.button__round:active {
+  color: white;
+  text-decoration: none;
 }
 @media screen and (min-width: 475px) {
   .button__round {
@@ -520,6 +571,14 @@ main {
 }
 .button__round--blue2 {
   background: #0a598f;
+  color: white;
+}
+.button__round--blue3 {
+  background: #2297d2;
+  color: white;
+}
+.button__round--green {
+  background: #20a579;
   color: white;
 }
 
@@ -734,5 +793,23 @@ footer p {
 /* footer - END */
 
 
+/* regular content */ 
+.page__content {
+  margin-bottom: 20px;
+}
+.page__title {
+  color: #0a598f;
+  font-size: 46px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: -7px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.page__content p {
+  font-size: 17px;
+}
+
+/* regular content - END */ 
 
 
