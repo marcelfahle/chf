@@ -30,4 +30,11 @@ $(document).ready( function() {
     $(el).find('.dropdown-menu').css( 'left', (el.offsetLeft-20) + 'px');
   });
 
+  $('*[data-toggle="dropdown"]').parent().hover(function() {
+    console.log("el", $(this).parent());
+    $(this).children('.dropdown-menu').stop(true, true).fadeIn(500);
+  }, function() {
+      $(this).children('.dropdown-menu').stop(true, true).fadeOut(500);
+  });
+
 });
