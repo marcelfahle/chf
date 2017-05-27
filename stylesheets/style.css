@@ -233,6 +233,7 @@ nav ul {
 	overflow: hidden;
 	background: transparent url("../images/global-nav-02-menu.png") no-repeat left top;
 	background-size: 23px 20px;
+  margin-right: 14px;
 }
 
 .nav-mobile__toggle select {
@@ -243,7 +244,7 @@ nav ul {
 	background: transparent;
 	background-image: none;
 	-webkit-appearance: none;
-  padding-left: 26px;
+  padding-left: 29px;
   padding-top: 3px;
 }
 
@@ -588,6 +589,9 @@ main {
   font-weight: 400;
   font-size: 10px;
   /* margin-top: 2px; */
+  /* override button defaults */
+  margin-right: 0;
+  padding: 4px 10px;
   letter-spacing: 0.1em;
 } 
 .card--primary .button__rect--white {
@@ -609,6 +613,8 @@ main {
   letter-spacing: 0.1em;
   line-height: 13px;
   padding: 4px 12px;
+  /* override defaults */
+  margin-right: 0;
 }
 
 
