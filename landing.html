@@ -57,10 +57,28 @@
               </div>
 
               <div class="nav-mobile__search-toggle">
-                <a href="" class="nav-mobile__search-toggle">
+                <a 
+									href="#" class="nav-mobile__search-toggle"
+                  data-toggle="dropdown" 
+                  role="button" 
+                  aria-haspopup="true" 
+                  aria-expanded="false" 
+								>
                   <span class="search-icon glyphicon glyphicon-search"></span>
                   Search
                 </a>
+                <div class="dropdown-menu dropdown--search" aria-labelledby="primary-tools">
+                  <section class="">
+										<div class="input-group search-input-group">
+											<input type="text" class="form-control"  placeholder="Search" >
+											<span class="input-group-addon">
+												<button type="submit">
+													<span class="glyphicon glyphicon-search"></span>
+												</button>  
+											</span>
+										</div>
+                  </section>
+                </div>
               </div>
 
 
@@ -119,6 +137,29 @@
                   </section>
                 </div>
               </nav>
+              <div class="pull-right nav__search-toggle">
+                <a href="" 
+                  class=""
+                  data-toggle="dropdown" 
+                  role="button" 
+                  aria-haspopup="true" 
+                  aria-expanded="false" 
+                >
+                  <span class="search-icon glyphicon glyphicon-search"></span>
+                </a>
+                <div class="dropdown-menu dropdown--search" aria-labelledby="primary-tools">
+                  <section class="">
+										<div class="input-group search-input-group">
+											<input type="text" class="form-control"  placeholder="Search" >
+											<span class="input-group-addon">
+												<button type="submit">
+													<span class="glyphicon glyphicon-search"></span>
+												</button>  
+											</span>
+										</div>
+                  </section>
+                </div>
+              </div>
 
               <nav class="nav__primary--wrapper">
                 <ul class="nav__primary">

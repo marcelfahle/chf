@@ -83,6 +83,18 @@ h1 {
   z-index: 10;
   height: 30px;
 }
+.nav__search-toggle {
+  display: block;
+	height: 30px;
+  position: relative;
+  margin-right: 6px;
+  z-index: 100;
+}
+.nav__search-toggle a {
+  background: #31769e;
+  padding: 0 4px;
+}
+
 
 
 
@@ -204,6 +216,15 @@ nav ul {
 .dropdown-menu--admin section {
   display: block; /* always underneath */
 }
+.dropdown--search {
+  height: 70px;
+  width: 300px;
+  color: #8c8c8c;
+}
+.nav-mobile__search-toggle .dropdown--search {
+  width: 100%;
+  top: 146px;
+}
 .dropdown__list-group {
   display: inline-block;
   vertical-align: top;
@@ -272,7 +293,7 @@ nav ul {
 .nav-mobile__search-toggle {
   vertical-align: top;
   display: inline-block;
-  height: 20px;
+  height: 30px;
   line-height: 20px;
 }
 /* mobile select - end */
@@ -828,6 +849,7 @@ footer p {
 /* regular content */ 
 .page__content {
   margin-bottom: 20px;
+  color: #8c8c8c;
 }
 .page__title {
   color: #0a598f;
@@ -844,4 +866,23 @@ footer p {
 
 /* regular content - END */ 
 
+/* search form */
+.search-input-group {
+	margin-right: 20px;
+}
+.search-input-group .input-group-addon{
+	background: white !important; 
+	padding: 5px 12px;
+}
+.search-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.search-input-group button{
+	border:0;
+	background:transparent;
+}
+/* search form - END */
+.dropdown-show { display: block; }
 
