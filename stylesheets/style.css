@@ -286,6 +286,10 @@ nav ul {
   padding-left: 29px;
   padding-top: 3px;
 }
+.nav-mobile__toggle select option {
+  color: black;
+  background: white;
+}
 
 .nav-mobile__toggle select:focus {
 	outline: none;
