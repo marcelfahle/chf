@@ -26,6 +26,13 @@ $(document).ready( function() {
   $('.nav__primary--item').each(function(i, el) {
     $(el).find('.dropdown-menu').css( 'left', (el.offsetLeft-20) + 'px');
   });
+  $('.nav__primary--item > a').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('data-target');
+    var ref = $(this).attr('href');
+    if (target && ref) { window.location.href = ref; }
+  });
+    
 
   $('*[data-toggle="dropdown"]').parent().hover(function() {
     $(this).children('.dropdown-menu').stop(true, true).fadeIn(500);
